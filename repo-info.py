@@ -1,12 +1,12 @@
 # importing the requests library
 import requests
 # defining the api-endpoint
-API_ENDPOINT = "http://1b43-115-119-250-30.ngrok.io/train"
+API_ENDPOINT = "http://16c7-115-119-250-30.ngrok.io/train"
 # data to be sent to api
 data = {
 	"url": "https://github.com/MJ410/mlops-classify_test",
 	"branch_name": "main",
-	"algo_type": "Regression"
+	"algo_type": "Classification"
 }
 # sending post request and saving response as response object
 r = requests.post(url = API_ENDPOINT, data = data)
