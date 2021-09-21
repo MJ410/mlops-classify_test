@@ -4,10 +4,10 @@ entry_points:
   main:
     parameters:
       learning_rate: {type: float, default: 0.3}
-      max_depth: {type: int, default: 3}
-      n_estimators: {type: int, default: 500}
+      colsample_bytree: {type: float, default: 1.0}
+      subsample: {type: float, default: 1.0}
     command: |
         python train.py \
           --learning-rate={learning_rate} \
-          --max_depth={colsample_bytree} \
-          --n_estimators={n_estimators}
+          --colsample-bytree={colsample_bytree} \
+          --subsample={subsample}
