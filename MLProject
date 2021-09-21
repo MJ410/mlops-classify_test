@@ -3,7 +3,7 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      learning_rate: {type: float, default: 0.3}
+      learning_rate: {type: float, default: 0.4}
       max_depth: {type: int, default: 3}
       n_estimators: {type: int, default: 500}
     command: |
