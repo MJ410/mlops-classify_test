@@ -6,7 +6,7 @@ API_ENDPOINT = "http://16c7-115-119-250-30.ngrok.io/train"
 data = {
 	"url": "https://github.com/MJ410/mlops-classify_test",
 	"branch_name": "main",
-	"algo_type": "Classification"
+	"algo_type": "Regression"
 }
 # sending post request and saving response as response object
 r = requests.post(url = API_ENDPOINT, data = data)
