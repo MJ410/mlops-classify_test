@@ -9,5 +9,5 @@ entry_points:
     command: |
         python train.py \
           --learning-rate={learning_rate} \
-          --max_depth={colsample_bytree} \
+          --max_depth={max_depth} \
           --n_estimators={n_estimators}
